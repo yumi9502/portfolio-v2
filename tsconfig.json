@@ -1,6 +1,14 @@
 {
     "compilerOptions": {
       "target": "ESNext",
+      "typeRoots": ["types", "node_modules/@types"],
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
       "strict": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
@@ -8,5 +16,6 @@
       "allowSyntheticDefaultImports": true,
       "moduleResolution": "node"
     },
-    "include": ["./src/**/*.ts", "src/**/*.tsx"]
+    "include": ["src"],
+    "exclude": ["node_modules", "build", "dist", "scripts"]
   }

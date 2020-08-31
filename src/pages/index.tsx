@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import GitChart from "../components/gitChart"
+import {GitChart} from "../components/gitChart"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {Table} from "../components/table"

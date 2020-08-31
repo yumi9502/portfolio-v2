@@ -17,7 +17,7 @@ const useStyles=makeStyles(()=>
   }),
 );
 
-const LangData=()=>{
+export const GitChart:React.FC<{}>=()=>{
     const tempData= useStaticQuery(graphql`
     query {
       githubData {
@@ -84,7 +84,7 @@ const LangData=()=>{
   // 言語の名前ごとの合計を出す
   var sum={};
   for(var idi=0;idi<langSet.length;idi++){
-    var key=langSet[idi][0];     // i++されるたび変数keyにlangSet[i]のキーを入れて
+     var key=langSet[idi][0];     // i++されるたび変数keyにlangSet[i]のキーを入れて
     if(key in sum){            // sumのキーに変数keyと同じキーが存在するかチェック
       sum[key]+=langSet[idi][1]; // 存在するときは同じキーごとにlangSet[i]の値を足す
     }else{
@@ -130,4 +130,4 @@ const LangData=()=>{
     </div>
   )
   }
-  export default LangData
+  //export default LangData
