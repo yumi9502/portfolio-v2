@@ -2,6 +2,7 @@ require("dotenv").config()
 const config = require("./config/site")
 
 module.exports = {
+  pathPrefix: "/portfolio-v2",
   siteMetadata: {
     siteUrl: config.siteUrl,
     title: config.title,
